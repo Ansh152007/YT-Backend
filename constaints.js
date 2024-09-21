@@ -1,2 +1,2 @@
-const DB_NAME="youtube-backend"
+const DB_NAME="yotube-backend"
 export default DB_NAME
