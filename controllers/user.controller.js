@@ -22,7 +22,7 @@ const{fullName,username,email,password}= req.body
     }
 
     User.findOne({
-        $or: [{}]
+        $or : [{username},{email}]
     })
 })
 
