@@ -37,7 +37,7 @@ const registerUser = asynchandler(async (req, res) => {
     // console.log(req.body)
     const { fullName, username, email, password } = req.body
     // console.log("Email:",email)
-
+    console.log(req.body)
     if ([fullName, username, email, password].some((field) => field?.trim() === "")) {
         throw new ApiError(400, "All fields are required!");
 
@@ -217,7 +217,6 @@ const UpdatePassword = asynchandler(async (req, res)=>{
     return res.status(200,json(new ApiResponse(200, {}, "Password is Changed Successfully")))
 })
 
-const 
 export {
     registerUser,
     loginUser,
